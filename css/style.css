@@ -1,0 +1,99 @@
+/* common css starts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root {
+    --primary-color: #6A4DF4;
+    --secondary-color: #4756DF;
+    --heading-color: #151515;
+    --paragraph-color: #737373;
+    --primary-font: "Inter", serif;
+    --paragraph-font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+    scroll-behavior: smooth;
+}
+
+ul , li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+} 
+
+.button {
+    font-family: var(--primary-font);
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background:var(--primary-color) ;
+    padding: 15px 42px;
+    transition: 0.5s;'
+    border: 1px solid var(--primary-color);
+    border-radius : 10px;
+
+}
+.button:hover{
+    background-color: transparent;
+    color: var(--secondary-color);
+}
+
+.heding__title {
+    font-style: 45px;
+    font-weight: bold;
+    color: var(--heading-color);
+}
+
+.heading__description {
+    font-size: var(--paragraph-font-size);
+    line-height: 26px;
+    color: var(--paragraph-color);
+    min-width: 609px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* common css ends */
+
+/* navbar part start  */
+#navbar {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__link  {
+    display: flex;
+    gap: 60px;
+}
+.nav__link{
+    font-style: 18px;
+    line-height: 26px;
+    color: #fff;
+    transition: 0.5s;
+}
+.nav__link:hover {
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+.nav__link--active {
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+/* navbar part end */
